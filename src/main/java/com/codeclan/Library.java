@@ -3,13 +3,23 @@ package com.codeclan;
 import java.util.ArrayList;
 
 public class Library {
+  private ArrayList<Book> catalogue;
+  private int capacity;
 
-  private ArrayList<String> books;
-
-  public Library(ArrayList<String> books){
-    this.books = books;
+  public Library(int capacity){
+    this.catalogue = new ArrayList<>();
+    this.capacity = capacity;
   }
 
+  public int bookCount () {
+    return catalogue.size();
+  }
 
+  public void addBook(Book book) {
+    catalogue.add(book);
+  }
 
+  public boolean hasCapacity() {
+    return capacity > catalogue.size();
+  }
 }
