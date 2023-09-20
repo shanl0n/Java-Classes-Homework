@@ -5,7 +5,7 @@ public class Book {
   private String author;
   private String genre;
 
-  public Book(String theWildSheepChase, String harukiMurakami, String mystery) {
+  public Book(String TheBorrowers, String MaryNorton, String ChildrensNovel) {
     this.title = title;
     this.author = author;
     this.genre = genre;
